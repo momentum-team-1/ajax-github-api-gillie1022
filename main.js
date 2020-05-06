@@ -14,7 +14,8 @@ theBasics.appendChild(infoList);
 let theStory = document.createElement("div");
 theStory.classList.add("theStory");
 card.appendChild(theStory);
-theStory.innerHTML = `<h2>The Story</h2>`;
+theStory.innerHTML = `<h2>The Story</h2><p></p>`;
+let bio = document.getElementsByTagName("p")[0]
 let avatar = document.createElement("div");
 avatar.classList.add("avatar");
 card.appendChild(avatar);
@@ -27,5 +28,8 @@ fetch("https://api.github.com/users/gillie1022")
     infoList.innerHTML = `
     <li>Name: ${data.name}</li>
     <li>GitHub URL: <a href=${data.html_url}>gillie1022</a></li>
-    <li>email: ${data.email}</li>`;
-  });
+    <li>email: ${data.email}</li>
+    <li>Location: ${data.location}</li>`;
+    bio.textContent = `${data.bio}`
+    avatar.innerHTML = `<img src=${data.avatar_url} alt="avatar">`
+});
