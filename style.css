@@ -1,13 +1,16 @@
 body{
-  
-font-family: 'Mali', cursive;
-font-size: 2vw;
+    
+    font-family: 'Mali', cursive;
+    font-size: 2vw;
+    border: 0.3vw solid red;
+    border-radius: 2em;
 }
 
 header{
     display: flex;
     justify-content: center;
     background-color: black;
+    border-radius: 1.8em 1.8em 0vw 0vw;
 }
 
 h1{
