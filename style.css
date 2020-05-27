@@ -1,0 +1,53 @@
+body{
+    
+    font-family: 'Mali', cursive;
+    font-size: 2vw;
+    border: 0.3vw solid red;
+    border-radius: 2em;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 1.8em 1.8em 0vw 0vw;
+}
+
+h1{
+font-family: 'Permanent Marker', cursive;
+font-size: 5vw;
+color: white;
+}
+h2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3vw;
+    margin: 2vw;
+
+}
+.card{
+    display: flex;
+    margin: 0em 3em;
+
+}
+
+.theBasics{
+    width: 40%;
+}
+
+.theStory{
+    width: 40%;
+}
+.theStory p{
+    padding: 0vw 2vw;
+    border-left: 0.2vw solid red;
+}
+
+.avatar{display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.avatar img{
+    width: 100%;
+    border-radius: 50%;
+}
